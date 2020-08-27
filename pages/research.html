@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Research
+		</title>
+
+
+        <!---The viewport is the user's visible area of a web page. It varies with the device, and will be smaller on a mobile phone than on a computer screen.he width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.---->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="author" content="Saugat Adhikari">
+
+        <meta name="keywords" content="Bootstrap, FontAwesome, RGBA, HTML, CSS, JavaScript, Research">
+        
+        <!-------Linking CSS, Jqueries and icons from Bootstrap and FontAwesome CDN. ---->
+        <!----Linking external CSS and JavaScript files into the main document. --->
+		<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<style type="text/css">
+                 * {
+                  box-sizing: border-box;
+                }
+
+                body {
+                  font-family: Arial, Helvetica, sans-serif;
+                }
+
+                .card img
+                {
+                    width: 100%;
+
+                }
+                /* Float four columns side by side */
+                .row .column {
+                  float: left;
+                  width: 50%;
+                  padding: 0 5px;
+                }
+
+                /* Remove extra left and right margins, due to padding in columns */
+                .row {margin: 0 -5px;}
+
+                /* Clear floats after the columns */
+                .row:after {
+                  content: "";
+                  display: table;
+                  clear: both;
+                }
+
+                /* Style the counter cards */
+                .card {
+                  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+                  padding: 16px;
+                  text-align: center;
+                  background-color: #f1f1f1;
+                }
+
+                
+                /* Responsive columns - one column layout (vertical) on small screens */
+                @media screen and (max-width: 600px) {
+                  .column {
+                    width: 100%;
+                    display: block;
+                    margin-bottom: 20px;
+                  }
+                }
+
+
+                /* Remove extra left and right margins, due to padding in columns */
+                .row1 {margin: 0 -5px;}
+
+                .row1 .column
+                {
+                  float: left;
+                  width: 50%;
+                  padding: 0 5px;
+                }
+
+                }
+                /* Clear floats after the columns */
+                .row:after {
+                  content: "";
+                  display: table;
+                  clear: both;
+                }
+
+                /* Style the counter cards */
+                .card {
+                  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+                  padding: 16px;
+                  text-align: center;
+                  background-color: black;
+                }
+
+                h4,p
+                {
+                    color: white;
+                    font-weight: bold;
+                }
+
+                
+               
+    </style>
+
+	</head>
+	<body>
+		<!----------------------Nav Bar---------------------------->
+
+            <!----------Creating a section with id along with a div that will hold the class nav-bar --->
+            <section id="user-information">
+            <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="#">
+                <!------Importing the image from local computer and setting its properties. --->
+                <img src="../images/zp logo.jpg" width="100" height="100"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-----Using i tag to import an icon from FontAwesome CDN ---->
+                <i class="fa fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <!-----Creating an unordered list to hold the elements of nav bat...  --->
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">HOME </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">GALLERY</a><!----Linking each pages of the website using href--->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="resume.html">RESUME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="blog.html" >BLOG</a>
+                  </li>
+                   <li class="nav-item">
+                    <a class="nav-link " href="contactme.html">CONTACT ME</a>
+                  </li>
+                  </li>
+                   <li class="nav-item">
+                    <a class="nav-link " href="research.html" >RESEARCH</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            </div>
+        </section>
+
+
+				<!---Research--------------------------------------------------->
+
+        <!----Using 4 different cards to show the researched websites ----->
+        <!-----Creating a row with two columns containing 2 cards ---->
+        <div class="row">
+              <div class="column">
+                <div class="card">
+                    <img src="../images/research1.png" alt="Avatar" width="550" height="400">
+                  <div class="container">
+                    <h4><b>Navigation Bar</b></h4> 
+                    <p>The Nav Bar used in my webpage has been designed through extensive research on navbar styles and techniques provided at <a href="https://www.w3schools.com/css/css_navbar.asp">W3School</a></p> 
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                     <img src="../images/research2.png" alt="Avatar" width="550" height="400">
+                    <div class="container">
+                        <h4><b>Contact Form</b></h4> 
+                        <p> The proper and adequate way to make function required for proper functioning of the contact form was learned through <a href="https://mdbootstrap.com/docs/jquery/forms/contact/">mdBootstrap</a></p> 
+                    </div>
+                </div>
+              </div>
+        </div>
+        <!----br tag is used for a line break in HTML ---->
+        <br><br>
+        <!-----Creating a row with two columns containing 2 more cards ---->
+        <div class="row1">
+              <div class="column">
+                <div class="card">
+                     <img src="../images/research3.png" alt="Avatar" width="550" height="400">
+                    <div class="container">
+                        <h4><b>HTML RGBA Colors</b></h4> 
+                        <p> <a href="https://www.hexcolortool.com/">HexColorTool</a> was used to pick appropriate and required colors for background,fonts,etc.</p> 
+                    </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                     <img src="../images/research4.png" alt="Avatar" width="550" height="400">
+                    <div class="container">
+                        <h4><b>Bootstrap </b></h4> 
+                        <p> <a href="https://getbootstrap.com/">Bootstrap</a> which is the largest HTML, CSS AND JavaScript Library, is properly researched for any new and exciting codes and  tags.</p> 
+                    </div>
+                </div>
+              </div>
+        </div>
+	        
+
+        <!---------------------------Contact Me-------------------------------------->
+        <!------This part serves asa footer as it is inclued in all webpages. ---->
+
+        <!-----Creating a div form contact information ----->
+        <div class="contact" id="contact" >
+            <div class="container text-center">
+                <h1>Contact Me</h1>
+                <p class="text-center"></p>
+
+                <!---------Creating a row with 3 columns of 4*4 grid --->
+                <div class="row">
+                    <div class="col-md-4">
+                        <i class="fa fa-phone"></i>
+                        <p>+977 9840497069</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <i class="fa fa-envelope"></i>
+                        <p>itsmesaugat1@gmail.com</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <i class="fa fa-internet-explorer"></i>
+                        <p>https://www.facebook.com/adhgift</p>
+                    </div>
+                </div>
+                <!------Making a radio button for downloading the official resume. --->
+                <button type="button" class="btn btn-primary"><a href="resume/Hotel-520.docx" download="Saugat Resume"><i class="fa fa-download"></i>Resume</a></button>
+                <button type="button" class="btn btn-primary"><i class="fa fa-hire-a-helper"></i>Hire Me</button>
+            </div>
+
+            <!------Footer section about author of the website ---->
+            <div class="footer text-center">
+                <p> Made with <i class="fa fa-heart-o"></i> by Saugat Adhikari</p>
+            </div>
+        </div>
+
+
+
+	</body>
+</html>

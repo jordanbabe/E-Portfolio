@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Curriculum Vitae</title>
+		<!---------Using meta tag------>
+		<meta name="description" content="The Curriculum Vitae of Saugat Adhikari."/>
+
+		<meta name="author" content="Saugat Adhikari">
+
+		<!---The viewport is the user's visible area of a web page. It varies with the device, and will be smaller on a mobile phone than on a computer screen.he width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.---->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+>
+
+		<!-------Linking CSS, Jqueries and icons from Bootstrap and FontAwesome CDN. ---->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<!--------------Internal CSS used for this particular webpage ------>
+
+		<style type="text/css">
+			html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+					border:0;
+					font:inherit;
+					font-size:100%;
+					margin:0;
+					padding:0;
+					vertical-align:baseline;
+					}
+
+					article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+					display:block;
+					}
+
+					html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+
+					.clear {clear: both;}
+
+					p {
+						font-size: 1em;
+						line-height: 1.4em;
+						margin-bottom: 20px;
+						color: #444;
+					}
+
+					#cv {
+						width: 90%;
+						max-width: 800px;
+						background: #f3f3f3;
+						margin: 30px auto;
+					}
+
+					.mainDetails {
+						padding: 25px 35px;
+						border-bottom: 2px solid #cf8a05;
+						background: #ededed;
+					}
+
+					#name h1 {
+						font-size: 2.5em;
+						font-weight: 700;
+						font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+						margin-bottom: -6px;
+					}
+
+					#name h2 {
+						font-size: 2em;
+						margin-left: 2px;
+						font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+					}
+
+					#mainArea {
+						padding: 0 40px;
+					}
+
+					#headshot {
+						width: 12.5%;
+						float: left;
+						margin-right: 30px;
+					}
+
+					#headshot img {
+						width: 100%;
+						height: auto;
+						-webkit-border-radius: 50px;
+						border-radius: 50px;
+					}
+
+					#name {
+						float: left;
+					}
+
+					#contactDetails {
+						float: right;
+					}
+
+					#contactDetails ul {
+						list-style-type: none;
+						font-size: 0.9em;
+						margin-top: 2px;
+					}
+
+					#contactDetails ul li {
+						margin-bottom: 3px;
+						color: #444;
+					}
+
+					#contactDetails ul li a, a[href^=tel] {
+						color: #444; 
+						text-decoration: none;
+						-webkit-transition: all .3s ease-in;
+						-moz-transition: all .3s ease-in;
+						-o-transition: all .3s ease-in;
+						-ms-transition: all .3s ease-in;
+						transition: all .3s ease-in;
+					}
+
+					#contactDetails ul li a:hover { 
+						color: #cf8a05;
+					}
+
+
+					section {
+						border-top: 1px solid #dedede;
+						padding: 20px 0 0;
+					}
+
+					
+
+					.sectionTitle {
+						float: left;
+						width: 25%;
+					}
+
+					.sectionContent {
+						float: right;
+						width: 72.5%;
+					}
+
+					.sectionTitle h1 {
+						font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+						font-style: italic;
+						font-size: 1.5em;
+						color: #cf8a05;
+					}
+
+					.sectionContent h2 {
+						font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+						font-size: 1.5em;
+						margin-bottom: -2px;
+					}
+
+					.subDetails {
+						font-size: 0.8em;
+						font-style: italic;
+						margin-bottom: 3px;
+					}
+
+					.keySkills {
+						list-style-type: none;
+						-moz-column-count:3;
+						-webkit-column-count:3;
+						column-count:3;
+						margin-bottom: 20px;
+						font-size: 1em;
+						color: #444;
+					}
+
+					.keySkills ul li {
+						margin-bottom: 3px;
+					}
+
+					.nav-bar
+				{
+					top:0;
+					position: sticky;
+					z-index: 2;
+				}
+
+				.navbar
+				{
+					background-color: #000;
+				}
+
+				.navbar-brand img
+				{
+					height: 50px;
+				}
+
+				.nav-bar .fa-bars
+				{
+					font-size: 35px;
+					color: white;
+				}
+
+				.navbar-toggler
+				{
+					outline: none !important;
+				}
+
+				.navbar-nav
+				{
+					float: right;
+					text-align: right;
+
+				}
+
+				.nav-link
+				{
+					color: #fff !important;
+				}
+
+
+		</style>
+
+
+
+	</head>
+
+	<!-----------Proper use of ID in HTML tags ----->
+
+	<body id="top">
+			<!----------------------Nav Bar---------------->
+
+			<!----------Creating a section with id along with a div that will hold the class nav-bar --->
+			<section id="user-information">
+			<div class="nav-bar">
+			<nav class="navbar navbar-expand-lg">
+			  <a class="navbar-brand" href="#">
+			  	<!------Importing the image from local computer and setting its properties. --->
+			  	<img src="../images/zp logo.jpg" width="100" height="100"></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			    <!-----Using i tag to import an icon from FontAwesome CDN ---->
+			    <i class="fa fa-bars"></i>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+			  	<!-----Creating an unordered list to hold the elements of nav bat...  --->
+			    <ul class="navbar-nav ml-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="../index.html">HOME </a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="gallery.html">GALLERY</a><!----Linking each pages of the website using href--->
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="resume.html">RESUME</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link " href="blog.html" >BLOG</a>
+			      </li>
+			       <li class="nav-item">
+			        <a class="nav-link " href="contactme.html">CONTACT ME</a>
+			      </li>
+			      </li>
+			       <li class="nav-item">
+			        <a class="nav-link " href="research.html" >RESEARCH</a>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+			</div>
+
+
+
+			<!-------------Formal CV---------------------------------------->
+
+			<div id="cv" class="instaFade">
+				<div class="mainDetails">
+					<div id="headshot" class="quickFade">
+						<img src="../images/headshot.jpg" alt="Saugat Adhkari" />
+					</div>
+					
+					<div id="name">
+						<!----Using h1 and h2 tags as per requirement ----->
+						<h1 class="quickFade delayTwo">Saugat Adhikari</h1>
+						<h2 class="quickFade delayThree">Networking, Programming and IT Security Enthusiast</h2>
+					</div>
+					
+					<!----Creaing a div for contact information for CV ----->
+					<div id="contactDetails" class="quickFade delayFour">
+						<ul>
+							<li>Email: <a href="mailto:itsmesaugat1@gmail.com" target="_blank">itsmesaugat1@gmail.com</a></li>
+							<li>Address: Tokha-12, Kathmandu, Nepal</li>
+							<li>Mobile: +977 9840497069</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				<!---Creating a div that holds the whole content for CV ---->
+				<div id="mainArea" class="quickFade delayFive">
+					<section>
+						<article>
+							<div class="sectionTitle">
+								<h1>Personal Profile</h1>
+							</div>
+							
+							<div class="sectionContent">
+								<p>An ambitious student with strong commitment to pursuing a career in Networking and Information Technology Security.Keen to secure any job in IT field, which will provide opportunities for further development and progression.</p>
+							</div>
+						</article>
+						<div class="clear"></div>
+					</section>
+					
+					
+					<section>
+						<div class="sectionTitle">
+							<h1>Work Experiences</h1>
+						</div>
+						
+						<div class="sectionContent">
+							<article>
+								<h2>Private Tutor and Technical Advisor</h2>
+								<p class="subDetails">February 2018 - Present</p>
+								<p class="subDetails">Social Development Organization Nepal (SDO-Nepal)</p>
+								<p>Working as a Technical Advisor and private tutor for a NGO that provides shelter to orphan and homeless children. Providing tution for the students from Grade 3 to Grade 10 regarding course material and assisting students on developing Computer skills.</p>
+							</article>
+							
+							<article>
+								<h2> Home Music Producer</h2>
+								<p class="subDetails">July 2017 - February 2020</p>
+								<p class="subDetails">Zeerocool Production</p>
+								<p>Started an media and production Youtube channel with friends, and have been making beats and music mixing for the past two years via home recording studio. Mixed and edited many vocals for various artists and musicians.</p>
+							</article>
+							</div>
+						<div class="clear"></div>
+					</section>
+					
+					
+					<section>
+						
+						<div class="sectionTitle">
+							<h1>Technical Skills</h1>
+						</div>
+						
+						<div class="sectionContent">
+							<ul class="keySkills">
+								<li>HTML,CSS and JavaScript</li>
+								<li>Python Programming</li>
+								<li>Java Programming</li>
+								<li>SQL (MySQL and Oracle)</li>
+								<li>Bash Scripting</li>
+								<li>Ethical Hacking (Ongoing)</li>
+						</div>
+						<div class="clear"></div>
+					</section>
+					
+					<section>
+						
+						<div class="sectionTitle">
+							<h1>Soft Skills</h1>
+						</div>
+						
+						<div class="sectionContent">
+							<ul class="keySkills">
+								<li>Fluent English Speaking/Writing</li>
+								<li>Adabtability</li>
+								<li>Multitasking</li>
+								<li>Ability to Work Under Pressure.</li>
+						</div>
+						<div class="clear"></div>
+					</section>
+					
+					
+					<section>
+						<div class="sectionTitle">
+							<h1>Education</h1>
+						</div>
+						
+						<div class="sectionContent">
+							<article>
+								<h2>College/University</h2>
+								<p class="subDetails">Bsc (Hons) Computer Networking and IT Security</p>
+								<p class="subDetails"> 2018 - Running</p>
+								<p>Islington College, Affiliated to London Metropolitan University<br>
+									Kamalpokhari,Kathmandu,Nepal</p>
+							</article>
+							
+							<article>
+								<h2>College</h2>
+								<p class="subDetails">+2(HSEB)</p>
+								<p class="subDetails">2013-2015</p>
+								<p>Global College of Management<br>
+								Mid-Baneshwor, Kathmandu,Nepal</p>
+							</article>
+						</div>
+						<div class="clear"></div>
+					</section>
+					
+					<section>
+						
+						<div class="sectionTitle">
+							<h1>References</h1>
+						</div>
+						
+						<div class="sectionContent">
+							<article>
+								<h2>Mr. Murari Mohan Adhikari</h2>
+								<p class="subDetails"> Chairman, SDO-Nepal</p>
+								<p class="subDetails"> +977 9843298588</p>
+								
+							</article>
+						</div>
+						<div class="clear"></div>
+					</section>
+					
+				</div>
+			</div><!--------End of conent area for CV ----->
+	</body>
+	<!------End of body tag----->
+</html><!-------------End of HTML tag---->

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Me</title>
+
+
+            <!---The viewport is the user's visible area of a web page. It varies with the device, and will be smaller on a mobile phone than on a computer screen.he width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.---->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <meta name="author" content="Saugat Adhikari">
+            <!-------Linking CSS, Jqueries and icons from Bootstrap and FontAwesome CDN. ---->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <!----Linking external CSS and JavaScript files into the main document. --->
+            <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+
+            <script type="text/javascript" src="../JavaScript/script.js"></script>
+    </head>
+    <body>
+
+       <!----------------------Nav Bar---------------------------->
+
+            <!----------Creating a section with id along with a div that will hold the class nav-bar --->
+            <section id="user-information">
+            <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="#">
+                <!------Importing the image from local computer and setting its properties. --->
+                <img src="../images/zp logo.jpg" width="100" height="100"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-----Using i tag to import an icon from FontAwesome CDN ---->
+                <i class="fa fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <!-----Creating an unordered list to hold the elements of nav bat...  --->
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">HOME </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">GALLERY</a><!----Linking each pages of the website using href--->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="resume.html">RESUME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="blog.html" >BLOG</a>
+                  </li>
+                   <li class="nav-item">
+                    <a class="nav-link " href="contactme.html">CONTACT ME</a>
+                  </li>
+                  </li>
+                   <li class="nav-item">
+                    <a class="nav-link " href="research.html" >RESEARCH</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            </div>
+        </section>
+
+    <!--------------------------------------Contact Form----------------------------------->
+
+        
+        <div class="info">
+            <h1>Get In Touch</h1>
+        </div>
+        <!------Creating a form tag and calling the checkForm(this) function form the external javascript file. Here, this means that the form is of the same class.  ---->
+        <form method="POST" class="form1" id="form1" action="succes.html" onsubmit="return (checkForm(this) &amp;&amp; false);">
+
+            <h1>Should you have any questions, please do not hesitate to contact me :</h1>
+
+            <div class="contentform">
+                <div class="leftcontact">
+                    <div class="form-group">
+                        <p>Surname<span>*</span></p>
+                        <span class="icon-case"><i class="fa fa-male"></i></span>
+                        <!------------Creating a textinput box/textfield for entering name along with placeholder .------>
+                        <input type="text" name="Surname" id="Surname" placeholder="Enter your Surname" />
+                        <div class="validation"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Name <span>*</span></p>
+                        <span class="icon-case"><i class="fa fa-user"></i></span>
+                        <input type="text" name="Name" id="Name" placeholder="Enter your Name" />
+                        <div class="validation"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <p>E-mail <span>*</span></p>
+                        <span class="icon-case"> <i class="fa fa-envelope"></i>
+
+
+                        </span>
+                        <input type="text" name="email" id="email" placeholder="Enter your email" />
+                        <div class="validation">
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="form-group">
+                        <p>Company </p>
+                        <span class="icon-case"><i class="fa fa-home"></i></span>
+                        <input type="text" name="society" id="society" placeholder="Enter your Company" />
+                        <div class="validation"></div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="rightcontact">
+
+                    
+
+                    <div class="form-group">
+                        <p>Phone number <span>*</span></p>
+                        <span class="icon-case"><i class="fa fa-phone"></i></span>
+                        <input type="text" name="phone" id="phone" placeholder="Enter your phone" />
+                        <div class="validation"></div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <p>Message <span>*</span></p>
+                        <span class="icon-case"><i class="fa fa-comments"></i>
+
+                        </span>
+                        <textarea name="message" rows="14" placeholder="Enter your message"></textarea>
+                        <div class="validation"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!------Creating radio buttons for submitting and reseting the value sof the Contact Form--->
+            <button type="submit" class="bouton-contact">Send</button>
+            <button type="reset" class="bouton-contact">reset</button>
+
+        </form>
+        </div>
+
+      
+
+
+
+    <!--================================ Internal CSS FOR CONTACT ME===============================================================-->
+        
+            <style>
+                    body {
+                        margin: auto;
+                        background-color: #cccccc;
+                        background-image: url("../images/bg-01.jpg");
+                        font-family: 'Open Sans', sans-serif;
+                    }
+                    
+                   
+                    
+                    .info i {
+                        color: #F6AA93;
+                    }
+                    
+                    form h1 {
+                        font-size: 20px;
+                        background: #b266ff none repeat scroll 0% 0%;
+                        color: #404040;
+                        padding: 22px 25px;
+                        border-radius: 5px 5px 0px 0px;
+                        margin: auto;
+                        text-shadow: none;
+                        text-align: left
+                    }
+                    
+                    form {
+                        border-radius: 5px;
+                        max-width: 700px;
+                        width: 100%;
+                        margin: 5% auto;
+                        background-color: #FFFFFF;
+                        overflow: hidden;
+                    }
+                    
+                    p span {
+                        color: #F00;
+                    }
+                    
+                    p {
+                        margin: 0px;
+                        font-weight: 500;
+                        font-weight: bold;
+                        line-height: 2;
+                        color: #333;
+                    }
+                    
+                    h1 {
+                        font-size: 40px;
+                        font-weight: bold;
+                        text-align: center;
+                        color: #99004c;
+                        text-shadow: 1px 0px 0px #ccc;
+                        margin: 50px 0px 0px 0px;
+                    }
+                    
+                    input {
+                        border-radius: 0px 5px 5px 0px;
+                        border: 1px solid #eee;
+                        margin-bottom: 15px;
+                        width: 75%;
+                        height: 40px;
+                        float: left;
+                        padding: 0px 15px;
+                    }
+                    
+                    a {
+                        text-decoration: inherit
+                    }
+                    
+                    textarea {
+                        border-radius: 0px 5px 5px 0px;
+                        border: 1px solid #EEE;
+                        margin: 0;
+                        width: 75%;
+                        height: 130px;
+                        float: left;
+                        padding: 0px 15px;
+                    }
+                    
+                    .form-group {
+                        overflow: hidden;
+                        clear: both;
+                    }
+                    
+                    .icon-case {
+                        width: 35px;
+                        float: left;
+                        border-radius: 5px 0px 0px 5px;
+                        background: #eeeeee;
+                        height: 42px;
+                        position: relative;
+                        text-align: center;
+                        line-height: 40px;
+                    }
+                    
+                    i {
+                        color: #555;
+                    }
+                    
+                    .contentform {
+                        padding: 40px 30px;
+                    }
+                    
+                    .bouton-contact {
+                        background-color: #81BDA4;
+                        color: #FFF;
+                        text-align: center;
+                        width: 100%;
+                        border: 0;
+                        padding: 17px 25px;
+                        border-radius: 0px 0px 5px 5px;
+                        cursor: pointer;
+                        margin-top: 40px;
+                        font-size: 18px;
+                    }
+                    
+                    .bouton-return {
+                        background-color: #8191BD;
+                        color: #FFF;
+                        text-align: center;
+                        width: 25%;
+                        border: 0;
+                        display: flex;
+                        justify-content: center;
+                        padding: 17px 25px;
+                        border-radius: 0px 0px 5px 5px;
+                        cursor: pointer;
+                        margin-top: 40px;
+                        font-size: 18px;
+                        margin-left: 35%;
+                    }
+                    
+                    .leftcontact {
+                        width: 49.5%;
+                        float: left;
+                        border-right: 1px dotted #CCC;
+                        box-sizing: border-box;
+                        padding: 0px 15px 0px 0px;
+                    }
+                    
+                    .rightcontact {
+                        width: 49.5%;
+                        float: right;
+                        box-sizing: border-box;
+                        padding: 0px 0px 0px 15px;
+                    }
+                    
+                    .validation {
+                        display: none;
+                        margin: 0 0 10px;
+                        font-weight: 400;
+                        font-size: 13px;
+                        color: #DE5959;
+                    }
+                    
+                    #sendmessage {
+                        border: 1px solid #fff;
+                        text-align: center;
+                        margin: 10px 0;
+                        font-weight: 600;
+                        margin-bottom: 30px;
+                        background-color: #EBF6E0;
+                        color: #5F9025;
+                        border: 1px solid #B3DC82;
+                        padding: 13px 40px 13px 18px;
+                        border-radius: 3px;
+                        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.03);
+                    }
+                    
+                    .fa {
+                        margin-top: 10px;
+                    }
+                    
+                    .far {
+                        margin-top: 10px;
+                    }
+                    
+                    .fas {
+                        margin-top: 10px;
+                    }
+
+
+            </style>
+
+    </body>
+</html>

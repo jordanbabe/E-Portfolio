@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Blog
+		</title>
+
+		<!---The viewport is the user's visible area of a web page. It varies with the device, and will be smaller on a mobile phone than on a computer screen.he width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.---->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta name="author" content="Saugat Adhikari">
+
+		<meta name="keywords" content="Technology, Kids, Digital, Students, Effects, App, familylink">
+		<meta name="title" content="App That Helps Parents Track Their Kids Digital Activities">
+		<!-------Linking CSS, Jqueries and icons from Bootstrap and FontAwesome CDN. ---->
+		<!----Linking external CSS and JavaScript files into the main document. --->
+		<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<script type="text/javascript" src="../JavaScript/script.js"></script>
+
+		<!-------Internal CSS for this page.------>
+		<style type="text/css">
+			
+			body {
+				    width: 80%;
+				    max-width: 1100px;
+				    margin: 10px auto;
+				    background: rgba(181, 171, 174, 1);
+				    border: 20px solid lightgrey;
+				    padding: 20px;
+				    font-family: 'PlayFair Display', serif;
+				}
+
+				.date {
+				    color: #4f8c6c;
+				    font-family: 'Noto Sans', serif;
+				    text-transform: uppercase;
+				    letter-spacing: 0.2rem;
+				    font-weight: bold;
+
+				}
+
+				h2 {
+				    font-family: 'Rozha one', sans-serif;
+				    font: normal;
+				    font-weight: bold;
+				    margin-top: 10px;
+				    margin-bottom: 10px;
+				    color: rgba(189, 80, 76, 1);
+
+				}
+
+				.quote {
+				    border-left: 5px solid lightgrey;
+				    padding-left: 10px;
+				    font-size: 20px;
+				}
+
+				#read-more
+				{
+					display: none;
+				}
+
+		</style>
+
+	</head>
+
+	<body>
+		<!----------------------Nav Bar---------------------------->
+
+			<!----------Creating a section with id along with a div that will hold the class nav-bar --->
+			<section id="user-information">
+			<div class="nav-bar">
+			<nav class="navbar navbar-expand-lg">
+			  <a class="navbar-brand" href="#">
+			  	<!------Importing the image from local computer and setting its properties. --->
+			  	<img src="../images/zp logo.jpg" width="100" height="100"></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			    <!-----Using i tag to import an icon from FontAwesome CDN ---->
+			    <i class="fa fa-bars"></i>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+			  	<!-----Creating an unordered list to hold the elements of nav bat...  --->
+			    <ul class="navbar-nav ml-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="../index.html">HOME </a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="gallery.html">GALLERY</a><!----Linking each pages of the website using href--->
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="resume.html">RESUME</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link " href="blog.html" >BLOG</a>
+			      </li>
+			       <li class="nav-item">
+			        <a class="nav-link " href="contactme.html">CONTACT ME</a>
+			      </li>
+			      </li>
+			       <li class="nav-item">
+			        <a class="nav-link " href="research.html" >RESEARCH</a>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+			</div>
+		</section>
+
+				<!----Blog--------------------------------------------->
+				<!------Creating a div with class "post" that holds the two articles. --->
+			<div class="post">
+			        <div class="date">May 01 2019</div>
+			        	<h2>App That Helps Parents Track Their Kids Digital Activities</h1>
+			        	<p class="quote">
+			            Family Link is an important service from Google that enables parents to help their kids and teens build safe and productive digital habits and make informed decisions online.</p>
+			            <!-----Using a span tag with id as dots for read more button.----->
+			            <span id="dots">....</span> 
+			            <!------The rest of the article id set to none display; in order to use javascript and make it visible on button click.----->
+			            <!-----Inline CSS used here ----->
+			            <span id="read-more" style="display: none;">
+			            	<p><a href="https://families.google.com/familylink/">Family Link</a> offers a non-intrusive form of parental control where parents get to supervise their kids' activities online and create Google accounts for them with access to Gmail, Maps, Calendar and several other Google services. Family Link requires that both parents and kids install Google Family Link app on their devices. Once the installation is done and everything is configured, parents will be able to do the following:
+			        	
+			        	<center>
+			        		<img src="../images/blog1.png" style="border: medium;">
+			        	</center>
+			        	<br>
+			        	
+			            <h4>"1- Guide them to good content</h4><br>
+
+						View their activity - Not all screen time is the same. Help your child make healthy decisions about what they do on their Android device, with activity reports showing how much time they’re spending on their favorite apps.
+						Manage their apps - Handy notifications let you approve or block apps your child wants to download from the Google Play Store. You can also manage in-app purchases, and hide specific apps on their device.
+						Feed their curiosity - It can be hard to figure out what apps are right for your child, so Family Link shows you teacher-recommended apps on Android that you can add directly to their device.
+			        	
+
+			        	
+			            <h4>2- Keep an eye on screen time</h4><br>
+
+						Set limits - It’s up to you to decide the right amount of screen time for your child. Family Link lets you set time limits and a bedtime for their supervised devices, so you can help them find a good balance.
+						Lock their device - Whether it’s time to go play outside, have dinner, or just spend time together, you can remotely lock a supervised device whenever it’s time to take a break.
+						</span>
+			        	</p>
+			        	<!-----Creating a button ReadMore for the users to access the full article by calling the myFunctionArticle1() when the button is clicked.--->
+
+			        	<!------Inline CSS used here ------->
+			        	<button onclick="myFunctionArticle1()" id="Btn-more" style="background: blue; color: white">Read More</button>
+			</div>
+			      <br><br>
+			      <hr style="background: black;">
+			<!--      second Article------------------------------------------------------------------------->
+			<div class="post">  
+			    <div class="date">April 13 2019</div>
+			    	<h2>Positive Effects of Technology on Education</h1>
+			    	<p class="quote">
+			        Modern technologies take an important role in our lives. But discussions upon the role of technology in education continue to appear even in the most modern and developed educational institutions.</p><span id="dots1">....</span><span id="read-more1" style="display: none;"><p> Are the newfangled tablets and smartphones helping children learn or their function is only to entertain? Let's find it out.
+			    	
+			    	<center>
+			    		<img src="../images/blog6.jpg" style="background: medium;" height="400" width="600">
+			    	</center>
+			    	<br>
+			    	
+			        <h4>1. Access to a huge informational background</h4><br>
+
+					The Internet connects people, thereby it can be used as an effective tool for gaining knowledge. Web users need only to enter specific information they want to find into search engines that will prompt them to millions of search results. There are several informative websites and web directories that offer information on a variety of topics. Students can use the Internet to get all the additional information they need to expand their knowledge base. A great example of an efficient use of world wide web for learning is academic assistance, that is currently being delivered worldwide. You can easily get custom writing help from <a href="https://customwriting.com/essay-help-online">CustomWriting.com</a> and lots of other websites if struggling with homework.
+			    	<br>
+
+			    
+			        <h4>2. Absence of geographical and political boundaries in social networks.</h4><br>
+			        <center>
+			        	<img src="../images/blog7.png" style="background: medium;" height="400" width="600">
+			        </center>
+
+					Nowadays, citizens of different countries in the virtual world share their opinions, thoughts and communicate with no limits. Any user of this environment can safely discuss his thoughts and questions, talk to virtual friends about his problems, which cannot be shared with his family members or offline friends. In a broader spectrum, users of these social networks can exchange opinions about the programs and policies of their own government.
+					</span>
+			    	</p>
+
+			    	<button onclick="myFunctionArticle2()" id="Btn-more1" style="background: blue; color: white">Read More</button>
+    		</div>
+
+
+
+
+
+				
+
+
+
+		<!---------------------------Contact Me-------------------------------------->
+		<!------This part serves asa footer as it is inclued in all webpages. ---->
+
+		<!-----Creating a div form contact information ----->
+		<div class="contact" id="contact" >
+			<div class="container text-center">
+				<h1>Contact Me</h1>
+				<p class="text-center"></p>
+
+				<!---------Creating a row with 3 columns of 4*4 grid --->
+				<div class="row">
+					<div class="col-md-4">
+						<i class="fa fa-phone"></i>
+						<p>+977 9840497069</p>
+					</div>
+
+					<div class="col-md-4">
+						<i class="fa fa-envelope"></i>
+						<p>itsmesaugat1@gmail.com</p>
+					</div>
+
+					<div class="col-md-4">
+						<i class="fa fa-internet-explorer"></i>
+						<p>https://www.facebook.com/adhgift</p>
+					</div>
+				</div>
+				<!------Making a radio button for downloading the official resume. --->
+				<button type="button" class="btn btn-primary"><a href="resume/Hotel-520.docx" download="Saugat Resume"><i class="fa fa-download"></i>Resume</a></button>
+				<button type="button" class="btn btn-primary"><i class="fa fa-hire-a-helper"></i>Hire Me</button>
+			</div>
+
+			<!------Footer section about author of the website ---->
+			<div class="footer text-center">
+				<p> Made with <i class="fa fa-heart-o"></i> by Saugat Adhikari</p>
+			</div>
+		</div>
+
+
+			
+				<!---------------Java Script for read more button---------------------------------->
+
+
+				<script>
+
+					/* Creating a function */
+					function myFunctionArticle1() {
+						/* Fetching the values of given id's by using getElementById function and storing them into respective new variables. */
+					  var dots = document.getElementById("dots");
+					  var moreText = document.getElementById("read-more");
+					  var btnText = document.getElementById("Btn-more");
+
+ 					/*  When read less is pressed block the extra text and show the dots and above it . */		if (dots.style.display === "none") {
+					    dots.style.display = "inline";
+					    btnText.innerHTML = "Read more"; 
+					    moreText.style.display = "none";
+						}
+						
+						/* When the dots are not shown and Read More button is presed, show the rest of the blog. */
+					 
+					   else{
+					    dots.style.display = "none";
+					    btnText.innerHTML = "Read less"; 
+					    moreText.style.display = "inline";
+					  }
+					}
+					
+					/* Similar Function for next Aricle . */
+					function myFunctionArticle2() {
+					  
+					  var dots1 = document.getElementById("dots1");
+					  var moreText1 = document.getElementById("read-more1");
+					  var btnText1 = document.getElementById("Btn-more1");
+
+					  
+					   
+					  if (dots1.style.display === "none")
+					   {
+					   	dots1.style.display = "inline";
+					    btnText1.innerHTML = "Read more"; 
+					    moreText1.style.display = "none";
+					   }
+					   else{
+					    dots1.style.display = "none";
+					    btnText1.innerHTML = "Read less"; 
+					    moreText1.style.display = "inline";
+					  }
+					}
+				</script>
+
+
+
+
+	</body> <!----End of body --->
+</html> <!-----End of HTML ---->
